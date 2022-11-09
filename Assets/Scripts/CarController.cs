@@ -60,7 +60,7 @@ public class CarController : MonoBehaviour
     /// Processes the Arduino message. See BowlingBallController. A better approach would have been to create a common parent class containing these methods.
     /// </summary>
     void OnMessageArrived( string msg )
-    {
+    {        
         //Split message
         string angleString = msg.Split( '=' )[1];
 

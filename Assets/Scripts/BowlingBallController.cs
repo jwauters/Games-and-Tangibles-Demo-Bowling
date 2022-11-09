@@ -42,6 +42,8 @@ public class BowlingBallController : MonoBehaviour
     /// </summary>
     void OnMessageArrived( string msg )
     {
+        Debug.Log( "msg arrived" );
+        /*
         //Split message
         string angleString = msg.Split( '=' )[1];
 
@@ -57,6 +59,7 @@ public class BowlingBallController : MonoBehaviour
 
         //Apply force to ball
         this.GetComponent<Rigidbody>().AddForce( new Vector3( force, 0, 0 ) );
+        */
     }
 
     /// <summary>
